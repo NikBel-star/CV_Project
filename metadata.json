@@ -1,0 +1,8 @@
+{
+    "name": "REDBERRY - CV Generator",
+    "description": "Redberry CV Generator - შექმენი შენი რეზიუმე მარტივად და სწრაფად.",
+    "requestFramePermissions": [],
+    "majorCapabilities": [
+        "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+    ]
+}
