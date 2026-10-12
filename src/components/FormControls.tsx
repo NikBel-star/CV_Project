@@ -38,9 +38,8 @@ export const InputField: React.FC<InputFieldProps> = ({
       {/* ველის ლეიბლი */}
       <label
         htmlFor={name}
-        className={`text-[15px] font-semibold transition-colors ${
-          isInvalid ? 'text-[#EF5050]' : 'text-[#1A1A1A]'
-        }`}
+        className={`text-[15px] font-semibold transition-colors ${isInvalid ? 'text-[#EF5050]' : 'text-[#1A1A1A]'
+          }`}
       >
         {label}
       </label>
@@ -51,13 +50,12 @@ export const InputField: React.FC<InputFieldProps> = ({
           id={name}
           name={name}
           value={value}
-          className={`w-full h-[48px] px-4 rounded-[4px] border text-[15px] outline-none transition-all duration-200 placeholder:text-gray-400 bg-white ${
-            isInvalid
-              ? 'border-[#EF5050] pr-10 focus:ring-1 focus:ring-[#EF5050]'
-              : isValid
+          className={`w-full h-[48px] px-4 rounded-[4px] border text-[15px] outline-none transition-all duration-200 placeholder:text-gray-400 bg-white ${isInvalid
+            ? 'border-[#EF5050] pr-10 focus:ring-1 focus:ring-[#EF5050]'
+            : isValid
               ? 'border-[#98E37E] pr-10 focus:ring-1 focus:ring-[#98E37E]'
               : 'border-[#BCBCBC] focus:border-[#6B40E3] focus:ring-1 focus:ring-[#6B40E3]'
-          }`}
+            }`}
           {...props}
         />
 
@@ -79,9 +77,8 @@ export const InputField: React.FC<InputFieldProps> = ({
       {/* დამხმარე მინიშნება ან შეცდომის ტექსტი */}
       {hint && (
         <span
-          className={`text-[12px] font-normal leading-4 ${
-            isInvalid ? 'text-[#EF5050]' : 'text-[#2E2E2E]/70'
-          }`}
+          className={`text-[12px] font-normal leading-4 ${isInvalid ? 'text-[#EF5050]' : 'text-[#2E2E2E]/70'
+            }`}
         >
           {isInvalid ? error : hint}
         </span>
@@ -125,9 +122,8 @@ export const TextareaField: React.FC<TextareaFieldProps> = ({
     <div className={`flex flex-col gap-1.5 w-full ${className}`}>
       <label
         htmlFor={name}
-        className={`text-[15px] font-semibold transition-colors ${
-          isInvalid ? 'text-[#EF5050]' : 'text-[#1A1A1A]'
-        }`}
+        className={`text-[15px] font-semibold transition-colors ${isInvalid ? 'text-[#EF5050]' : 'text-[#1A1A1A]'
+          }`}
       >
         {label}
       </label>
@@ -137,13 +133,12 @@ export const TextareaField: React.FC<TextareaFieldProps> = ({
           name={name}
           rows={rows}
           value={value}
-          className={`w-full p-4 rounded-[4px] border text-[15px] outline-none transition-all duration-200 placeholder:text-gray-400 bg-white resize-y ${
-            isInvalid
-              ? 'border-[#EF5050] focus:ring-1 focus:ring-[#EF5050]'
-              : isValid
+          className={`w-full p-4 rounded-[4px] border text-[15px] outline-none transition-all duration-200 placeholder:text-gray-400 bg-white resize-y ${isInvalid
+            ? 'border-[#EF5050] focus:ring-1 focus:ring-[#EF5050]'
+            : isValid
               ? 'border-[#98E37E] focus:ring-1 focus:ring-[#98E37E]'
               : 'border-[#BCBCBC] focus:border-[#6B40E3] focus:ring-1 focus:ring-[#6B40E3]'
-          }`}
+            }`}
           {...props}
         />
         {isInvalid && (
@@ -159,9 +154,8 @@ export const TextareaField: React.FC<TextareaFieldProps> = ({
       </div>
       {hint && (
         <span
-          className={`text-[12px] font-normal leading-4 ${
-            isInvalid ? 'text-[#EF5050]' : 'text-[#2E2E2E]/70'
-          }`}
+          className={`text-[12px] font-normal leading-4 ${isInvalid ? 'text-[#EF5050]' : 'text-[#2E2E2E]/70'
+            }`}
         >
           {isInvalid ? error : hint}
         </span>
@@ -208,9 +202,8 @@ export const SelectField: React.FC<SelectFieldProps> = ({
     <div className={`flex flex-col gap-1.5 w-full ${className}`}>
       <label
         htmlFor={name}
-        className={`text-[15px] font-semibold transition-colors ${
-          isInvalid ? 'text-[#EF5050]' : 'text-[#1A1A1A]'
-        }`}
+        className={`text-[15px] font-semibold transition-colors ${isInvalid ? 'text-[#EF5050]' : 'text-[#1A1A1A]'
+          }`}
       >
         {label}
       </label>
@@ -219,15 +212,13 @@ export const SelectField: React.FC<SelectFieldProps> = ({
           id={name}
           name={name}
           value={value}
-          className={`w-full h-[48px] px-4 pr-10 rounded-[4px] border text-[15px] outline-none appearance-none transition-all duration-200 bg-white ${
-            !value ? 'text-gray-400' : 'text-[#1A1A1A]'
-          } ${
-            isInvalid
+          className={`w-full h-[48px] px-4 pr-10 rounded-[4px] border text-[15px] outline-none appearance-none transition-all duration-200 bg-white ${!value ? 'text-gray-400' : 'text-[#1A1A1A]'
+            } ${isInvalid
               ? 'border-[#EF5050] focus:ring-1 focus:ring-[#EF5050]'
               : isValid
-              ? 'border-[#98E37E] focus:ring-1 focus:ring-[#98E37E]'
-              : 'border-[#BCBCBC] focus:border-[#6B40E3] focus:ring-1 focus:ring-[#6B40E3]'
-          }`}
+                ? 'border-[#98E37E] focus:ring-1 focus:ring-[#98E37E]'
+                : 'border-[#BCBCBC] focus:border-[#6B40E3] focus:ring-1 focus:ring-[#6B40E3]'
+            }`}
           {...props}
         >
           <option value="" disabled>
@@ -254,9 +245,8 @@ export const SelectField: React.FC<SelectFieldProps> = ({
       </div>
       {hint && (
         <span
-          className={`text-[12px] font-normal leading-4 ${
-            isInvalid ? 'text-[#EF5050]' : 'text-[#2E2E2E]/70'
-          }`}
+          className={`text-[12px] font-normal leading-4 ${isInvalid ? 'text-[#EF5050]' : 'text-[#2E2E2E]/70'
+            }`}
         >
           {isInvalid ? error : hint}
         </span>
@@ -419,9 +409,8 @@ export const ImageUploadField: React.FC<ImageUploadProps> = ({
     <div className="flex flex-col gap-2.5">
       <div className="flex flex-wrap items-center justify-between gap-2">
         <span
-          className={`text-[15px] font-semibold ${
-            isInvalid ? 'text-[#EF5050]' : 'text-[#1A1A1A]'
-          }`}
+          className={`text-[15px] font-semibold ${isInvalid ? 'text-[#EF5050]' : 'text-[#1A1A1A]'
+            }`}
         >
           {label}
         </span>
@@ -459,15 +448,14 @@ export const ImageUploadField: React.FC<ImageUploadProps> = ({
         onDrop={handleDrop}
         onDragOver={handleDragOver}
         onDragLeave={handleDragLeave}
-        className={`flex flex-wrap items-center gap-4 p-3 rounded-lg border transition-all ${
-          isDragging
-            ? 'border-[#6B40E3] bg-[#6B40E3]/5'
-            : isInvalid
+        className={`flex flex-wrap items-center gap-4 p-3 rounded-lg border transition-all ${isDragging
+          ? 'border-[#6B40E3] bg-[#6B40E3]/5'
+          : isInvalid
             ? 'border-[#EF5050] bg-red-50/20'
             : isValid
-            ? 'border-[#98E37E] bg-emerald-50/20'
-            : 'border-dashed border-gray-300 bg-gray-50/40'
-        }`}
+              ? 'border-[#98E37E] bg-emerald-50/20'
+              : 'border-dashed border-gray-300 bg-gray-50/40'
+          }`}
       >
         <button
           type="button"
